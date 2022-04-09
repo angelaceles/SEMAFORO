@@ -1,0 +1,161 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>HSemaforo</title>
+    
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/funcion.js"></script>
+</head>
+<body>
+  <main>
+    <div id="carretera" class="desktop">
+
+      <div id="c1">
+        <div id="idAreaDibujoSem1">
+          <svg id="idArea">
+               <rect id="idSemaforo"
+               x="518" y="10">    
+               </rect>
+  
+               <circle id="idLuzRoja" class="luz" cx="570" cy="50" ayuda="cx=100+100/2" cy="10+100/2" r="35">                 
+               </circle> 
+  
+               <circle id="idLuzAmarilla" class="luz" cx="570" cy="140" ayuda="cx=10+100+100/2" r="35">                 
+              </circle> 
+  
+              <circle id="idLuzVerde" class="luz" cx="570" cy="230" ayuda="cx=10+100+100+100/2" r="35">                 
+              </circle> 
+          </svg> 
+      </div>
+
+      </div>
+      <div id="vnv">
+        <div id="o3"></div>
+        <div id="o4">
+          <marquee scrollamount="0" direction="right">
+          </marquee>
+        </div>
+      </div>
+
+      <div id="c3">
+        <div id="idAreaDibujoSem2">
+          <svg id="idArea2">
+               <rect id="idSemaforo2"
+               x="9" y="10">    
+               </rect>
+  
+               <circle id="idLuzRoja2" class="luz2" cx="60" cy="50" ayuda="cx=100+100/2" cy="10+100/2" r="35">                 
+               </circle> 
+  
+               <circle id="idLuzAmarilla2" class="luz2" cx="60" cy="140" ayuda="cx=10+100+100/2" r="35">                 
+              </circle> 
+  
+              <circle id="idLuzVerde2" class="luz2" cx="60" cy="230" ayuda="cx=10+100+100+100/2" r="35">                 
+              </circle> 
+          </svg>
+      </div>
+
+      </div>
+
+      <div id="vov">
+        <div id="o1"></div>
+        <div id="o2">
+          <marquee scrollamount="0" direction="right">
+          </marquee>
+        </div>
+      </div>
+      <div id="center"></div>
+      <div id="vev">
+        <div id="o1"></div>
+        <div id="o2">
+          <marquee scrollamount="0" direction="right">
+          </marquee>
+        </div>
+      </div>
+
+      <div id="c2">
+        <div id="idAreaDibujoSem3">
+          <svg id="idArea3">
+  
+               <rect id="idSemaforo3"
+               x="518" y="10">    
+               </rect>
+  
+               <circle id="idLuzRoja3" class="luz3" cx="570" cy="50" ayuda="cx=100+100/2" cy="10+100/2" r="35">                 
+               </circle> 
+  
+               <circle id="idLuzAmarilla3" class="luz3" cx="570" cy="140" ayuda="cx=10+100+100/2" r="35">                 
+              </circle> 
+  
+              <circle id="idLuzVerde3" class="luz3" cx="570" cy="230" ayuda="cx=10+100+100+100/2" r="35">                 
+              </circle> 
+          </svg>
+      </div>
+
+      </div>
+      <div id="vsv">
+
+        <div id="o3"></div>
+        <div id="o4">
+          <marquee scrollamount="0" direction="right">
+          </marquee>
+        </div>
+
+      </div>
+      <div id="c4">
+        <div id="idAreaDibujoSem4">
+          <svg id="idArea4">
+  
+               <rect id="idSemaforo4"
+               x="9" y="10">    
+               </rect>
+  
+               <circle id="idLuzRoja4" class="luz4" cx="60" cy="50" ayuda="cx=100+100/2" cy="10+100/2" r="35">                 
+               </circle> 
+  
+               <circle id="idLuzAmarilla4" class="luz4" cx="60" cy="140" ayuda="cx=10+100+100/2" r="35">                 
+              </circle> 
+  
+              <circle id="idLuzVerde4" class="luz4" cx="60" cy="230" ayuda="cx=10+100+100+100/2" r="35">                 
+              </circle> 
+          </svg>
+      </div>
+
+      </div>
+
+      <div>
+        <button id="idBotonIniciar" onclick="iniciar()">INICIAR</button>
+        <button id="idBotonTerminar" onclick="fnDetener()">TERMINAR</button>
+
+        <form name="vias">
+          <label for="vo">via oeste</label><br>
+          <input type="text" id="vo">
+          <br><br>
+          <label for="vs">via sur</label><br>
+          <input type="text" id="vs">
+          <br><br>
+          <label for="ve">via este</label><br>
+          <input type="text" id="ve">
+          <br><br>
+          <label for="vn">via norte</label><br>
+          <input type="text" id="vn">
+          <br>
+          <button type="button" onclick="fnComparar()">Enviar</button>
+        </form>
+        <div>
+            <p id="autos_o"></p>
+            <p id="autos_s"></p>
+            <p id="autos_e"></p>
+            <p id="autos_n"></p>
+        </div>
+
+    </div>
+
+    </div>
+  </main>
+
+  </body>
+</html>
